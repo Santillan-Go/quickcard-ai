@@ -4,7 +4,7 @@ import { FaBook } from "react-icons/fa";
 import { BackButton } from "@/components/BackButton";
 
 // get the id from the URL params
-export const PageBook = ({ book }) => {
+const PageBook = ({ book }) => {
   return (
     <div className="bg-gradient-to-br from-white via-blue-50 to-blue-100 p-6 rounded-3xl shadow-xl flex flex-col items-center w-full h-screen max-w-md mx-auto mb-8">
       {/*BACK BUTTON*/}
@@ -44,3 +44,5 @@ export const PageBook = ({ book }) => {
     </div>
   );
 };
+
+export default PageBook;
