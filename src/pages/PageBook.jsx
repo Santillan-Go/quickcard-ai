@@ -36,12 +36,6 @@ const PageBook = ({ book }) => {
         >
           <FaBook /> <p>Read </p>
         </Link>
-        {/* <Link
-          href={`/book/${book.id}/listen`}
-          className="bg-green-500 text-white px-6 py-2 rounded-full shadow hover:bg-green-600 transition-colors font-semibold"
-        >
-          Escuchar
-        </Link> */}
       </div>
     </div>
   );

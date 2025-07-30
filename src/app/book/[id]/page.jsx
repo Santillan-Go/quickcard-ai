@@ -12,17 +12,8 @@ export default async function Page({ params }) {
   //get id
   const { id } = await params;
   const book = await get_books({ id });
-  // console.log({ msg: "got it", book });{
-  // console.log({ msg: "got it", id });
-  // const book = {
-  //   id: id,
-  //   title: "Sample Book Title",
-  //   introduction:
-  //     "This is a sample book description that gives an overview of the book's content and purpose.",
-  //   image: "/zoom_ai_logo.png",
-  //   author: "Unknown Author",
-  // };
-  if (!book) {
+
+  if (!book || !book.image) {
     return <div className="text-center text-red-500">Book not found</div>;
   }
   return (
