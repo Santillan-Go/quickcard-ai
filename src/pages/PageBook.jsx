@@ -3,6 +3,7 @@ import Link from "next/link";
 
 import { FaBook } from "react-icons/fa";
 import { BackButton } from "@/components/BackButton";
+import Image from "next/image";
 
 // get the id from the URL params
 const PageBook = ({ book }) => {

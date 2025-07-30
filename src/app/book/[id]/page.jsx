@@ -13,7 +13,7 @@ export default async function Page({ params }) {
   const { id } = await params;
   const book = await get_books({ id });
 
-  if (!book || !book.image) {
+  if (!book) {
     return <div className="text-center text-red-500">Book not found</div>;
   }
   return (
