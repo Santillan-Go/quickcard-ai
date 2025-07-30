@@ -1,6 +1,4 @@
-"use client";
 import Link from "next/link";
-
 import { FaBook } from "react-icons/fa";
 import { BackButton } from "@/components/BackButton";
 import Image from "next/image";
@@ -15,15 +13,13 @@ const PageBook = ({ book }) => {
       {/*BACK BUTTON*/}
       <BackButton />
       <div className="w-32 h-32 mb-4 rounded-2xl overflow-hidden shadow-lg border-4 border-blue-200">
-        {book.image && (
-          <Image
-            src={book.image}
-            alt={book.title}
-            width={128}
-            height={128}
-            className="object-cover w-full h-full"
-          />
-        )}
+        <Image
+          src={book.image}
+          alt={book.title}
+          width={128}
+          height={128}
+          className="object-cover w-full h-full"
+        />
       </div>
       <h2 className="text-2xl font-extrabold text-blue-900 mb-1 text-center">
         {book.title}
