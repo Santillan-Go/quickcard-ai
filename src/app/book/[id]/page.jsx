@@ -31,7 +31,7 @@ export default async function Page({ params }) {
         id: book.id,
         title: book.title || "Sample Book Title",
         author: book.author || "Unknown Author",
-        image: book.image || "/zoom_ai_logo.png",
+        image: book.image,
         introduction:
           book.introduction ||
           "This is a sample book description that gives an overview of the book's content and purpose.",
