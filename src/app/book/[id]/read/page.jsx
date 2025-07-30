@@ -20,6 +20,10 @@ const page = async ({ params }) => {
   const book = await get_transcript_book(id);
   console.log("Book Data:", book);
   console.log(book.transcript[0].paragraphs);
+
+  if (!book) {
+    return <div className="text-center text-red-500">No book data</div>;
+  }
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-100">
       <BackButton href={`/book/${id}`} />

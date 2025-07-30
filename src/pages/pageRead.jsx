@@ -6,6 +6,10 @@ import ControlAudio from "@/components/ControlAudio";
 const PageRead = ({ book }) => {
   const [position, setPosition] = useState(0);
   const [currentPage, setCurrentPage] = useState(0);
+
+  if (!book) {
+    return <div className="text-center text-red-500">No book data</div>;
+  }
   const totalPages = book.transcript;
 
   const handlePageChange = (direction) => {

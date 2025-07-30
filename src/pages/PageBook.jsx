@@ -1,10 +1,14 @@
+"use client";
 import Link from "next/link";
-import Image from "next/image";
+
 import { FaBook } from "react-icons/fa";
 import { BackButton } from "@/components/BackButton";
 
 // get the id from the URL params
 const PageBook = ({ book }) => {
+  if (!book) {
+    return <div className="text-center text-red-500">No book data</div>;
+  }
   return (
     <div className="bg-gradient-to-br from-white via-blue-50 to-blue-100 p-6 rounded-3xl shadow-xl flex flex-col items-center w-full h-screen max-w-md mx-auto mb-8">
       {/*BACK BUTTON*/}
