@@ -1,4 +1,4 @@
-import PageBook from "@/pages/pageBook";
+import PageBook from "@/pages/PageBook";
 const API_URL = "https://ai-api-mu.vercel.app/get-books";
 const get_books = async ({ id }) => {
   const response = await fetch(API_URL);

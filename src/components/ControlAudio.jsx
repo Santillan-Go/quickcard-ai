@@ -2,13 +2,7 @@
 
 import { useEffect, useState } from "react";
 import { useAudioPlayer } from "react-use-audio-player";
-import {
-  FaPlay,
-  FaPause,
-  FaBackspace,
-  FaArrowLeft,
-  FaArrowRight,
-} from "react-icons/fa";
+import { FaPlay, FaPause, FaArrowLeft, FaArrowRight } from "react-icons/fa";
 
 const ControlAudio = ({
   url,

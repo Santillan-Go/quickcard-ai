@@ -1,6 +1,6 @@
 import { BackButton } from "@/components/BackButton";
-import ControlAudio from "@/components/ControlAudio";
-import PageRead from "@/pages/pageRead";
+// import ControlAudio from "@/components/ControlAudio";
+import PageRead from "@/pages/PageRead";
 const get_transcript_book = async (id) => {
   const res = await fetch(
     `https://ai-api-mu.vercel.app/get-book-transcript/${id}`,
