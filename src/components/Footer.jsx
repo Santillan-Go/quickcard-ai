@@ -69,6 +69,14 @@ export default function Footer() {
           </Link>
         </div>
       </section>
+      <section>
+        <div className="text-center text-gray-600 mt-8">
+          <p className="text-sm">
+            © {new Date().getFullYear()} QuickCard. All rights reserved.
+          </p>
+          <p className="text-xs">Made with ❤️ by Santillan </p>
+        </div>
+      </section>
     </footer>
   );
 }

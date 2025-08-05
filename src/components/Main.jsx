@@ -1,4 +1,5 @@
 import { CardBook } from "./CardBook";
+import InfoSection from "./InfoSection";
 
 //fetch books from this:
 /*
@@ -9,7 +10,7 @@ https://ai-api-mu.vercel.app/get-books
 
 const API_URL = "https://ai-api-mu.vercel.app/get-books";
 const get_books = async () => {
-  const response = await fetch(API_URL);
+  const response = await fetch(API_URL, { cache: "no-store" });
   if (!response.ok) {
     throw new Error("Failed to fetch books");
   }
@@ -22,12 +23,15 @@ export default async function Main() {
   // in this main I'm gonna show the card books using grid layout
   return (
     <main className="min-h-screen  bg-white p-4 mt-10">
-      {/* show some example cards with a color gray */}
+      <div>{/* ads section */}</div>
+
       <div className="flex flex-wrap justify-center gap-4 ">
         {books.books.map((book) => (
           <CardBook key={book.id} book={book} />
         ))}
       </div>
+
+      <InfoSection />
 
       {/*
       

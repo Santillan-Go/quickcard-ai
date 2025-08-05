@@ -20,3 +20,19 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.custom-scrollbar::-webkit-scrollbar {
+  width: 8px;
+  border-radius: 8px;
+  background: #e0f7fa;
+}
+
+.custom-scrollbar::-webkit-scrollbar-thumb {
+  background: #0abab4;
+  border-radius: 8px;
+}
+
+.custom-scrollbar {
+  scrollbar-width: thin;
+  scrollbar-color: #0abab4 #e0f7fa;
+}

@@ -28,7 +28,7 @@ const PageRead = ({ book }) => {
 
   return (
     <>
-      <section className="bg-white rounded-2xl shadow-lg p-8 max-w-2xl w-full mx-auto mt-8">
+      <section className="bg-white rounded-2xl shadow-lg p-8 max-w-2xl w-full mx-auto mt-8 max-h-[65vh] overflow-y-auto  custom-scrollbar">
         {book.transcript[currentPage].paragraphs.map((paragraph, index) => (
           <div key={index} className="mb-6">
             {paragraph.sentences.map((sentence, sentenceIndex) => {
